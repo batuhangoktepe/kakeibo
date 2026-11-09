@@ -35,6 +35,13 @@
             margin-bottom: 12px;
             color: #2C2825;
         }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            color: #2C2825;
+        }
         p, li {
             font-size: 15px;
             color: #4A4540;
@@ -67,7 +74,7 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="subtitle">Effective date: October 5, 2026</p>
+        <p class="subtitle">Effective date: November 10, 2026</p>
 
         <div class="highlight">
             <p><strong>In short:</strong> Your financial data never leaves your device. We don't collect, store, or share any of your personal information. The app sends anonymous usage statistics to help us improve it, and you can turn them off in Settings.</p>
@@ -106,7 +113,15 @@
         <p>You can turn this off at any time in <strong>Settings &gt; Privacy &gt; Share anonymous usage statistics</strong>. When it is off, nothing is sent.</p>
 
         <h2>6. Notifications</h2>
-        <p>Kakeibo may send local notifications as daily spending reminders if you enable this feature. These notifications are generated entirely on your device and are not sent through any external server.</p>
+        <p>Kakeibo may send local notifications, such as daily spending reminders or the question about a purchase described below, if you enable these features. These notifications are generated entirely on your device and are not sent through any external server.</p>
+
+        <h3>Pay and log (optional, iOS 2.4 and Android 1.4 and later)</h3>
+        <p>If you turn on Pay and log, Kakeibo can write down your card payments for you and ask which pillar each one belongs to. It is off until you set it up, and you can turn it off at any time.</p>
+        <ul>
+            <li><strong>On iPhone:</strong> you create a Shortcuts automation that runs after an Apple Pay payment. The automation passes only the amount and the shop name to Kakeibo.</li>
+            <li><strong>On Android:</strong> you grant Kakeibo notification access in Android settings. Kakeibo then reads only payment notifications from Google Wallet (and Google Pay), and takes only the amount and the shop name from them. Notifications from every other app are ignored and never stored. You can revoke notification access at any time in Android settings or from Kakeibo's Settings.</li>
+            <li><strong>Stays on your device:</strong> the amount and shop name are kept on your device like any expense you type in. They are never sent to us or to any third party, and no bank login or account is involved.</li>
+        </ul>
 
         <h2>7. Data Export</h2>
         <p>You can export your transaction data as a CSV file at any time through the app's Settings. The exported file is generated locally on your device.</p>
